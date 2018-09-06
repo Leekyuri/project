@@ -6,26 +6,31 @@
 		* {margin:0; padding:0;}
 		ul,ol,li {list-style:none;}
 
-		.output {width:300px; 
-				height:150px;
+		.output {width:250px; 
+				height:130px;
 				border:1px solid #ccc;
 				background:white; 
 				color:black;
 				text-align:center;
-				line-height: 35px;
-				margin: 200px auto;}
+				line-height: 40px;
+				margin: 300px auto;}
+
+		button {background: none;
+				border:1px solid #ccc;}	
+
 		img {width:400px;
 			position:absolute;
-			top:380px;
+			top:450px;
 			left:50%;
 			transform:translateX(-50%);}
+
 	</style>
 </head>
 <body>
 	<div class="output">
 		<h4>BMI계산기</h4>
-		<input type="text" placeholder="키" size="5" id="myHeight">cm
-		<input type="text" placeholder="몸무게" size="5" id="myWeight">kg
+		<input type="text" placeholder="키" size="3" id="myHeight">cm
+		<input type="text" placeholder="몸무게" size="3" id="myWeight">kg
 		<button id="but" onclick="cal()">계산</button>
 		<article>
 			
